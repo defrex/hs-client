@@ -1,20 +1,21 @@
 {
-    "name": "hs-client",
-    "version": "0.8.0",
-    "description": "Hipsell client",
-    "author": "defrex",
-    "bin": {"hsc": "./main.js"},
-    "dependencies": {
-        "cli": "0.2.8",
-        "underscore": "1.1.6",
-        "wrench": "1.1.0",
-        "uglify-js": "1.0.2",
-        "coffee-script": "1.1.1",
-        "depends": "latest",
-        "xmlhttprequest": "1.2.2",
-        "jsdom": "latest",
-        "colors": "latest",
-        "gzip": "latest",
-        "request": "latest"
-    }
+  "name": "hs-client",
+  "version": "0.8.0",
+  "description": "Hipsell client",
+  "author": "defrex",
+  "bin": {
+    "hsc": "./main.js"
+  },
+  "dependencies": {
+    "cli": "0.2.8",
+    "underscore": "1.1.6",
+    "wrench": "1.1.0",
+    "uglify-js": "1.0.2",
+    "coffee-script": "1.1.1",
+    "depends": "0.3.1",
+    "xmlhttprequest": "1.2.2",
+    "jsdom": "~0.8.11",
+    "colors": "~0.6.2",
+    "request": "~2.33.0"
+  }
 }

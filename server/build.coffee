@@ -1,7 +1,7 @@
 
 _ = require('underscore')._
 fs = require 'fs'
-gzip = require 'gzip'
+zlib = require 'zlib'
 
 
 compilers = [
@@ -64,8 +64,8 @@ zippit = (cache, zipped, clbk)->
   done = _.after Object.keys(cache).length, -> clbk null, zipped
 
   for name, content of cache then do (name, content)->
-    gzip content, (err, zipd)->
-      return clbk err if err != 0
+    zlib.gzip content, (err, zipd)->
+      return clbk err if err
 
       zipped[name] = zipd
       done()
